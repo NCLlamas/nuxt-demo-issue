@@ -22,10 +22,12 @@ export default defineNuxtConfig({
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "@/assets/css/main.css"
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    "@/plugins/chakra.ts"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,6 +49,10 @@ export default defineNuxtConfig({
     '@nuxtjs/pwa',
   ],
 
+  router: {
+    middleware:['homeGuard']
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -57,7 +63,14 @@ export default defineNuxtConfig({
     }
   },
 
+  chakra: {
+    config: {
+      autoImport: true
+    }
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+
   }
 })

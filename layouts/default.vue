@@ -2,8 +2,9 @@
   <div class="container">
     <CThemeProvider>
       <CColorModeProvider>
-        <CBox font-family="body" as="main">
+        <CBox font-family="body" as="main" display="flex">
           <CReset />
+          <SidebarMenu></SidebarMenu>
           <Nuxt />
         </CBox>
       </CColorModeProvider>
@@ -17,6 +18,7 @@ import {
   CReset,
   CBox
 } from '@chakra-ui/vue'
+import SidebarMenu from "~/components/navigation/SidebarMenu.vue"
 
 export default {
   name: 'App',
@@ -24,7 +26,17 @@ export default {
     CThemeProvider,
     CColorModeProvider,
     CReset,
-    CBox
+    CBox,
+    SidebarMenu
   }
 }
 </script>
+<style scoped>
+  .menu-bar {
+    background: linear-gradient(180deg, #6154D2 0%, #393B62 100%)
+  }
+  .sidebar-filler {
+    width: 128px;
+    height: 100vh;
+  }
+</style>

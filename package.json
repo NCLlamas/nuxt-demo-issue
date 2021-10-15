@@ -19,6 +19,11 @@
   },
   "devDependencies": {
     "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27237303.6acfdcd",
-    "@nuxt/types": "^2.15.7"
+    "@nuxt/types": "^2.15.7",
+    "@v2icons/ionicons5": "^0.11.0",
+    "@v2icons/utils": "^0.1.4",
+    "chakra-loader": "^1.0.3",
+    "sass": "^1.43.2",
+    "sass-loader": "10.1.1"
   }
 }
