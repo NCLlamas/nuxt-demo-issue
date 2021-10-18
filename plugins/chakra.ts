@@ -11,8 +11,19 @@ const customIcons = {
   },
 };
 
+const customTheme = {
+  colors: {
+    brand: {
+      200:'#6154D2',
+      400:'#6F46AD',
+      600:'#393B62'
+    }
+  }
+}
+
 // Step 2: Add the custom icon to the Chakra plugin
 Vue.use(Chakra, {
+  extendTheme: customTheme,
   icons: {
     extend: {
       ...customIcons

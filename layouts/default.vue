@@ -4,8 +4,10 @@
       <CColorModeProvider>
         <CBox font-family="body" as="main" display="flex">
           <CReset />
-          <SidebarMenu></SidebarMenu>
-          <Nuxt />
+          <sidebar-menu></sidebar-menu>
+          <CBox w="100%" h="calc(100vh - 60px)" my="30px" mr="30px">
+            <Nuxt />
+          </CBox>
         </CBox>
       </CColorModeProvider>
     </CThemeProvider>
