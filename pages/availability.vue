@@ -12,7 +12,7 @@ import NonTabHeader from "../components/navigation/NonTabHeader";
 import BorderedWrapper from "../components/wrappers/borderedWrapper";
 import availabilitySelector from "../components/collections/availabilitySelector";
 export default {
-  name: "settings",
+  name: "availability",
   components: {BorderedWrapper, NonTabHeader, availabilitySelector}
 }
 </script>

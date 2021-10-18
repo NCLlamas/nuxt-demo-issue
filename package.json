@@ -16,7 +16,8 @@
     "core-js": "^3.15.1",
     "dayjs": "^1.10.7",
     "nuxt": "^2.15.7",
-    "nuxt-edge": "latest"
+    "nuxt-edge": "latest",
+    "vue-good-table": "^2.21.11"
   },
   "devDependencies": {
     "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27237303.6acfdcd",
