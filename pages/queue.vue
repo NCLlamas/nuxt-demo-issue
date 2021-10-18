@@ -27,6 +27,13 @@
       <CTabPanel>
         <bordered-wrapper>
           <call-stack slot="left" title="Missed Calls" :items="missedItems">
+            <c-select variant="outline" borderColor="black" backgroundColor="transparent" rounded="20px" maxWidth="200px" slot="append" placeholder="Select Range">
+              <option value="today">Today</option>
+              <option value="yesterday">Yesterday</option>
+              <option value="week">Past Week</option>
+              <option value="month">Past Month</option>
+              <option value="month">All Time</option>
+            </c-select>
             <template v-slot="{data}">
               <missed-call-data :timestamp="data.timestamp"></missed-call-data>
             </template>

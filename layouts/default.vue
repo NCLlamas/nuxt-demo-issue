@@ -8,27 +8,20 @@
           <CBox w="100%" h="calc(100vh - 60px)" my="30px" mr="30px">
             <Nuxt />
           </CBox>
+          <online-users></online-users>
         </CBox>
       </CColorModeProvider>
     </CThemeProvider>
   </div>
 </template>
 <script>
-import {
-  CThemeProvider,
-  CColorModeProvider,
-  CReset,
-  CBox
-} from '@chakra-ui/vue'
 import SidebarMenu from "~/components/navigation/SidebarMenu.vue"
+import onlineUsers from "../components/items/onlineUsers";
 
 export default {
   name: 'App',
   components: {
-    CThemeProvider,
-    CColorModeProvider,
-    CReset,
-    CBox,
+    onlineUsers,
     SidebarMenu
   }
 }

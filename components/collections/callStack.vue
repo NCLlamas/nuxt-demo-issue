@@ -1,6 +1,9 @@
 <template>
 <CFlex direction="column">
-  <CHeading as="h3" size="lg" mb="30px" v-if="title">{{title}}</CHeading>
+  <CFlex align="center" justify="space-between" mb="30px">
+    <CHeading flexGrow="1" as="h3" size="lg" v-if="title">{{title}}</CHeading>
+    <slot name="append"></slot>
+  </CFlex>
   <calling-card v-for="(item,index) in items" :key="index" :name="item.name" :contact="item.contact">
     <slot v-bind:data="item.callData"></slot>
   </calling-card>
