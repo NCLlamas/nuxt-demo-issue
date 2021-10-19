@@ -1,19 +1,10 @@
 <template>
-  <CBox>
-    <non-tab-header title="Availability"></non-tab-header>
-    <bordered-wrapper>
-      <availability-selector slot="left"></availability-selector>
-    </bordered-wrapper>
-  </CBox>
+  <h1>Availability Page</h1>
 </template>
 
 <script>
-import NonTabHeader from "../components/navigation/NonTabHeader";
-import BorderedWrapper from "../components/wrappers/borderedWrapper";
-import availabilitySelector from "../components/collections/availabilitySelector";
 export default {
   name: "availability",
-  components: {BorderedWrapper, NonTabHeader, availabilitySelector}
 }
 </script>
 

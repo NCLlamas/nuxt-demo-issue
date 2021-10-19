@@ -1,6 +1,4 @@
-import { defineNuxtConfig } from '@nuxt/bridge'
-
-export default defineNuxtConfig({
+export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -8,11 +6,11 @@ export default defineNuxtConfig({
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'hi-there-portal-web',
+    title: 'unknown-middleware-demo',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Customer Service Made Human' },
+      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -51,7 +49,7 @@ export default defineNuxtConfig({
   ],
 
   router: {
-    middleware:['homeGuard']
+    middleware:['homeGuard'],
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -74,4 +72,4 @@ export default defineNuxtConfig({
   build: {
 
   }
-})
+}
