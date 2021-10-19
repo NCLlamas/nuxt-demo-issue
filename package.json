@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
@@ -13,9 +13,10 @@
     "@nuxtjs/emotion": "^0.1.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.0"
+    "nuxt-edge": "latest"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.7"
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27244261.c49f9ca",
+    "@nuxt/types": "^2.13.2"
   }
 }
