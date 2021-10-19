@@ -7,7 +7,3 @@ export default {
   name: "availability",
 }
 </script>
-
-<style scoped lang="scss">
-
-</style>

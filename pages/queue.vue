@@ -7,7 +7,3 @@ export default {
   name: 'queue'
 }
 </script>
-
-<style scoped lang="scss">
-
-</style>
